@@ -1,0 +1,486 @@
+* {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  margin: 0 auto;
+  padding: 0 auto;
+  z-index: 99;
+}
+.dn {
+  display: none;
+}
+.loader {
+  position: absolute;
+  animation-name: up-right;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.done {
+  animation: downPreload;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes up-right {
+  0% {
+    bottom: -350px;
+    left: -350px;
+  }
+  100% {
+    bottom: 700px;
+    left: 100%;
+  }
+}
+@keyframes downPreload {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+header {
+  margin-top: 100px;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.header__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140%;
+  max-width: 366px;
+  width: 100%;
+  color: #282a33;
+  margin-top: 40px;
+}
+.header__descr {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #282a33;
+  max-width: 560px;
+  width: 100%;
+  margin-top: 30px;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  margin-bottom: 169px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.header__nav {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #282a33;
+}
+.nav__descr {
+  margin-bottom: 10px;
+}
+.nav__descr:last-child {
+  margin-bottom: 15px;
+}
+.nav__link {
+  margin-right: 15px;
+}
+.nav__link:last-child {
+  margin-right: 0px;
+}
+.experience__content {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.work__exp_title {
+  max-width: 220px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #282a33;
+}
+.date__exp {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  margin-top: 60px;
+  margin-bottom: 8px;
+}
+.date__expm {
+  margin-top: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  margin-bottom: 8px;
+}
+.position__exp {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282a33;
+  margin-right: 8px;
+}
+.position__experience {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.company__title {
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282a33;
+}
+.company__descr {
+  margin-left: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282a33;
+}
+.company__descriptiom {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282a33;
+}
+.company__subtitle {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  max-width: 560px;
+  width: 100%;
+  color: #282a33;
+  margin-bottom: 4px;
+}
+.company__link {
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #2f80ed;
+}
+.edu__title {
+  margin-top: 5px;
+  max-width: 150px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #282a33;
+}
+.edu__subtitle {
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #282a33;
+  max-width: 150px;
+}
+.edu__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.edu__exp {
+  margin-top: 30px;
+  max-width: 150px;
+  width: 100%;
+}
+.education__exp {
+  max-width: 220px;
+  width: 100%;
+}
+.skills__content {
+  margin-top: 200px;
+}
+.skills__title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #282a33;
+}
+.skills {
+  max-width: 270px;
+  width: 100%;
+}
+.all__skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skill__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282a33;
+}
+.skill__descr {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #282a33;
+  margin-top: 6px;
+}
+.footer__content {
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+.footer__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#showBurger {
+  margin-right: 15px;
+  display: none;
+}
+.top {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1094px) {
+  .education__df {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .education__exp {
+    max-width: 370px;
+    width: 100%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 870px) {
+  .header__content {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  ul {
+    display: none;
+  }
+  #showBurger {
+    display: block;
+  }
+  header {
+    margin-top: 40px;
+  }
+  .header__logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__burger {
+    display: block;
+  }
+  .education__df {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .education__exp {
+    max-width: 370px;
+    width: 100%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .expt__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .workExp__line {
+    width: 700px;
+  }
+  .footer__line {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  ul {
+    display: none;
+  }
+  header {
+    margin-top: 20px;
+  }
+  .header__logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .nav__burger {
+    display: block;
+    margin-top: 20px;
+  }
+  .header__img {
+    width: 80px;
+    height: 80px;
+  }
+  .header__title {
+    max-width: 261px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 140%;
+  }
+  .header__descr {
+    max-width: 355px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .experience__content {
+    margin-top: 40px;
+    display: block;
+  }
+  .expt__img {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .education__df {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .education__exp {
+    max-width: 370px;
+    width: 100%;
+    padding: 5px;
+  }
+  .skills__content {
+    margin-top: 40px;
+  }
+  .skill__title {
+    margin-bottom: 20px;
+  }
+  .footer__img {
+    width: 365px;
+  }
+  .footer__content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .top {
+    width: 30px;
+    height: 30px;
+  }
+  .top_img {
+    width: 10px;
+  }
+  .workExp__line {
+    width: 355px;
+  }
+  .footer__line {
+    width: 355px;
+    top: 0;
+  }
+}
+
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: none;
+  z-index: 98;
+  position: fixed;
+}
+.active {
+  display: block;
+}
+#remBurger {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.burger__img {
+  margin-top: 60px;
+}
+.header__nav_burger {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #282a33;
+}
+.burger_title {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.redLine {
+  position: relative;
+}
+.red__line {
+  top: -100px;
+  left: -10px;
+  z-index: -1;
+  position: absolute;
+}
+.workExp__line {
+  top: -300px;
+  z-index: -1;
+  position: absolute;
+}
+.footer__line {
+  top: -200px;
+  z-index: -1;
+  position: absolute;
+}
+.burger_title:first-child {
+  margin-top: 60px;
+}
